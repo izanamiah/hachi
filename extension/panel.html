@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Side Panel</title>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Browser Panel</h1>
+
+      <div class="cursor-section">
+        <h2>Virtual Cursor</h2>
+        <div class="input-group">
+          <input
+            type="text"
+            id="element-selector"
+            placeholder="Enter CSS selector (e.g., #id, .class, tagname)"
+          />
+          <button id="find-element" class="action-button">Move Cursor</button>
+        </div>
+        <div class="button-group">
+          <button id="click-element" class="action-button click-button">
+            Click Element
+          </button>
+          <button id="hide-cursor" class="action-button secondary-button">
+            Hide Cursor
+          </button>
+        </div>
+        <p class="helper-text">
+          Examples: #header, .btn-primary, div.container, h1, button:first-child
+        </p>
+      </div>
+
+      <div class="actions-section">
+        <h2>Actions</h2>
+        <button id="refresh-page" class="action-button">Refresh Page</button>
+      </div>
+
+      <div class="info-section">
+        <h2>Information</h2>
+        <p>Current URL: <span id="current-url">Loading...</span></p>
+        <p>Cursor Status: <span id="cursor-status">Inactive</span></p>
+      </div>
+    </div>
+
+    <script src="panel.js"></script>
+  </body>
+</html>

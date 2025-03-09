@@ -1,0 +1,151 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 100%;
+}
+
+h1 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+h2 {
+  color: #3498db;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.status-section,
+.actions-section,
+.info-section,
+.cursor-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#status-text {
+  font-weight: 500;
+}
+
+.action-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 10px 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #2980b9;
+}
+
+.action-button:active {
+  background-color: #1c638e;
+}
+
+/* Add styles for disabled button */
+.action-button:disabled {
+  background-color: #cccccc;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.info-section p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+#current-url,
+#cursor-status {
+  font-family: monospace;
+  word-break: break-all;
+  font-weight: 500;
+  color: #3498db;
+}
+
+/* New styles for the cursor feature */
+.input-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#element-selector {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.helper-text {
+  color: #777;
+  font-size: 12px;
+  margin-top: 0;
+  font-style: italic;
+}
+
+#cursor-status.active {
+  color: #27ae60;
+}
+
+#cursor-status.error {
+  color: #e74c3c;
+}
+
+.click-button {
+  background-color: #e74c3c;
+}
+
+.click-button:hover {
+  background-color: #c0392b;
+}
+
+.click-button:active {
+  background-color: #a33025;
+}
+
+.secondary-button {
+  background-color: #7f8c8d;
+}
+
+.secondary-button:hover {
+  background-color: #636e6f;
+}
+
+.secondary-button:active {
+  background-color: #4d5859;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Virtual Cursor Side Panel",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Opens a side panel with a virtual cursor that can move to specified HTML elements",
+  "action": {
+    "default_title": "Open Side Panel",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["sidePanel", "tabs", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "128": "icon.png"
+  }
+}
